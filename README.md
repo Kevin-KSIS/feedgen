@@ -16,6 +16,7 @@ If you're only interested in the feeds that this already outputs, I generate all
 
 There are currently three supported feed types:
  
+ - `all` which runs all generators in my pool.
  - `h1` which runs the Hackerone generator, which tracks the [latest disclosed Hacktivity](https://hackerone.com/hacktivity?querystring=&filter=type:public&order_direction=DESC&order_field=latest_disclosable_activity_at&followed_only=false) generator
  - `p0` which runs the ProjectZero generator, which tracks the [Project Zero issues list](https://bugs.chromium.org/p/project-zero/issues/list?q=&can=1&sort=-id). One important note about this one is that the feed does not grab dates so it is only accurate after it has been running. The first feed generated will be be based purely on ids.
  - `p0rca` which runs the Project Zero Root Cause Analysis generator, which tracks the [Project Zero Root Cause Analysis list](https://googleprojectzero.github.io/0days-in-the-wild/rca.html)

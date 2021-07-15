@@ -98,7 +98,7 @@ func main() {
 	var feedType, outputType, outputFile, configFile, workDir, outputDir string
 	var configDir = "./configs/"
 
-	flag.StringVar(&feedType, "f", "all", "Provide feed type to generate. One of: css, h1, p0, p0rca, syzbot")
+	flag.StringVar(&feedType, "f", "", "Provide feed type to generate. One of: css, h1, p0, p0rca, syzbot")
 	flag.StringVar(&outputType, "t", "rss", "Type of the output feed: rss, atom, or json")
 	flag.StringVar(&outputFile, "o", "feed.xml", "Output file")
 	flag.StringVar(&outputDir, "oD", "./rss_output", "Output file")
