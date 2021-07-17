@@ -1,0 +1,12 @@
+{
+  "url": "https://www.freebuf.com/author/%E5%B9%B3%E5%AE%89%E9%93%B6%E8%A1%8C%E5%BA%94%E7%94%A8%E5%AE%89%E5%85%A8%E5%9B%A2%E9%98%9F?type=article",
+  "title": "Ping An Bank",
+  "item_selectors": {
+    "container": ".container-center .ant-tabs-tabpane-active",
+    "title": ".article-item .title-view font",
+    "author": ".article-item .item-content .item-right .item-bottom span:last-of-type font",
+    "link": ".article-item .title-view .title-left a",
+    "updated": ".article-item .item-content .item-right .item-bottom .bottom-right span:last-child font",
+    "updated_format": "2020-09-01"
+  }
+}

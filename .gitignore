@@ -22,3 +22,4 @@ workdir/
 *.atom
 *.xml
 .idea/
+sftp-config.json

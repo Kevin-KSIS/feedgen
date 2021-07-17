@@ -1,0 +1,12 @@
+{
+  "url": "http://wjlshare.com/",
+  "title": "WjlShare",
+  "item_selectors": {
+    "container": ".container",
+    "title": ".kratos-post-inner-new .kratos-entry-header-new .kratos-entry-title-new a",
+    "author": "",
+    "link": ".kratos-post-inner-new .kratos-entry-header-new .kratos-entry-title-new a",
+    "updated": ".kratos-post-meta-new font",
+    "updated_format": "June 14, 2021"
+  }
+}

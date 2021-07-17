@@ -1,0 +1,12 @@
+{
+  "url": "https://blog.csdn.net/qsort_",
+  "title": "QSort_",
+  "item_selectors": {
+    "container": ".navList-box",
+    "title": ".blog-list-box .blog-list-box-top font",
+    "author": "",
+    "link": ".blog-list-box a",
+    "updated": ".blog-list-box .blog-list-footer-right span:last-of-type font",
+    "updated_format": "June 14, 2021"
+  }
+}

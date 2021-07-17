@@ -1,0 +1,12 @@
+{
+  "url": "https://offensivedefence.co.uk/",
+  "title": "Offensive Defence Blog",
+  "item_selectors": {
+    "container": ".app-container .posts-list",
+    "title": ".posts-list-item .posts-list-item-title",
+    "author": "",
+    "link": ".posts-list-item .posts-list-item-title",
+    "updated": ".posts-list-item  span svg",
+    "updated_format": "Jul 13, 2021"
+  }
+}

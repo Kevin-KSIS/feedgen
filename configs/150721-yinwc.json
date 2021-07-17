@@ -1,0 +1,12 @@
+{
+  "url": "https://yinwc.github.io/",
+  "title": "YinWC",
+  "item_selectors": {
+    "container": ".container .main",
+    "title": ".abstract-title span:last-child font",
+    "author": "",
+    "link": ".abstract-title",
+    "updated": ".abstract-time font",
+    "updated_format": "2019/02/02"
+  }
+}
