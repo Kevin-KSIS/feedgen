@@ -2,6 +2,7 @@ package generators
 
 import (
 	"bytes"
+	"crypto/tls"
 	"encoding/json"
 	"errors"
 	"fmt"
@@ -133,8 +134,12 @@ func (g *CssGenerator) GetLink(node *html.Node) (string, error) {
 }
 
 func (g *CssGenerator) fetch() (string, error) {
+	tr := &http.Transport{
+		TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
+	}
 	client := http.Client{
 		Timeout: 15 * time.Second,
+		Transport: tr,
 	}
 
 	resp, err := client.Get(g.Url)

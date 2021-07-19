@@ -8,6 +8,7 @@ import (
 	"io/ioutil"
 	"log"
 	"os"
+	"path/filepath"
 	"strings"
 )
 
@@ -95,14 +96,15 @@ func main() {
 	/*
 	* PARAMETERS
 	*/
+	home, _ := filepath.Abs(filepath.Dir(os.Args[0]))
 	var feedType, outputType, outputFile, configFile, workDir, outputDir string
-	var configDir = "./configs/"
+	var configDir = home + "/configs/"
 
 	flag.StringVar(&feedType, "f", "", "Provide feed type to generate. One of: css, h1, p0, p0rca, syzbot")
 	flag.StringVar(&outputType, "t", "rss", "Type of the output feed: rss, atom, or json")
-	flag.StringVar(&outputFile, "o", "feed.xml", "Output file")
-	flag.StringVar(&outputDir, "oD", "./rss_output", "Output file")
-	flag.StringVar(&workDir, "w", "./workdir", "Work dir, need by some feed generators to store state")
+	flag.StringVar(&outputFile, "o", home + "/feed.xml", "Output file")
+	flag.StringVar(&outputDir, "oD", home + "/rss_output", "Output file")
+	flag.StringVar(&workDir, "w", home + "/workdir", "Work dir, need by some feed generators to store state")
 	flag.StringVar(&configFile, "c", "", "Config file for CSS generator.")
 	flag.Parse()
 
